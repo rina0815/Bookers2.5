@@ -8,5 +8,6 @@ class User < ApplicationRecord
   attachment :profile_image, destroy: false
 
   #バリデーションは該当するモデルに設定する。エラーにする条件を設定できる。
-  validates :name, length: {maximum: 20, minimum: 2}
+  validates :name, length: { maximum: 20, minimum: 2, message: "is too short (minimum is 2 characters)" }
+  validates :introduction, length: { maximum: 50, message: "is too long (maximum is 50 characters)" }
 end

@@ -27,6 +27,14 @@ header .navbar-left span {
 
 body {
 	margin-top: 40px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
 }
 
 .actions {
@@ -34,4 +42,9 @@ body {
 }
 #error_explanation {
   color: red;
+}
+
+#notice {
+    color: green;
+    margin-top: 10px;
 }

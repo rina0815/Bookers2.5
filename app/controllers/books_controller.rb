@@ -5,6 +5,8 @@ before_action :correct_user, only: [:edit, :update]
     @book_new = Book.new
     @book = Book.find(params[:id])
     @user = current_user
+    @book_comment = BookComment.new
+    @book_comments = @book.book_comments.all
   end
 
   def index
